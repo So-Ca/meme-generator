@@ -1,0 +1,121 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.page{
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px #611E7A;
+}
+
+main{
+  margin: auto;
+  padding: 36px;
+}
+
+header{
+  margin: 1% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(90deg, #611E7A 20%, #8E26BC 100%);
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #ffffff;
+  font-family:'Times New Roman', Times, serif;
+}
+header img{
+  margin: auto 10px;
+  max-width: 50px;
+}
+
+header h1{
+  font-size: 2.5em;
+}
+
+.h1-subcontainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h2{
+  margin-right: 2%;
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form{
+  display: grid; 
+  grid-template: 40px 40px / 1fr 1fr; /* due righe da 40px suddivise in due colonne da 1 free space */
+  gap: 17px;
+}
+
+input{
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.37);
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 5px;
+}
+
+button{
+  margin:auto;
+  grid-column: 1 / -1; /* il pulsante deve occupare la riga dall'inizio 1 alla fine -1 */
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #611E7A 20%, #8E26BC 100%);
+  font-size: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.meme-img{
+  margin: 10%;
+  max-width: 600px;
+}
+
+.meme-img-container{
+  position: relative;
+}
+
+.phrase{
+  margin: 1%;
+  position: absolute;
+  left: 200px;
+  font-size: 2.5em;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top{
+  top: 100px;
+}
+
+.bottom{
+  top: 270px;
+}
+
+#root{
+  margin: 1% auto;
+  width: 50%;
+}
