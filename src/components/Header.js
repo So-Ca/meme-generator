@@ -5,7 +5,7 @@ function Header(){
   return(
     <header>
         <div className="h1-subcontainer">
-        <img src={faceImg}/>
+        <img src={faceImg} alt="Meme Face"/>
         <h1>Meme Generator</h1>
       </div>
       <h2>Create your own meme</h2>

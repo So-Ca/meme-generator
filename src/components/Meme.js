@@ -36,10 +36,10 @@ function Meme(){
       <div className="form">
         <input onChange={getPhrase} value={meme.topText} name="topText" type="text" placeholder="enter first phrase part"/>
         <input onChange={getPhrase} value={meme.bottomText} name="bottomText" type="text" placeholder="enter second phrase part"/>
-        <button onClick={getMemeImage}>Get a new meme image <img src={svg}/></button>
+        <button onClick={getMemeImage}>Get a new meme image <img src={svg} alt="thumbnail example"/></button>
       </div>
       <div className="meme-img-container">
-        <img className="meme-img" src={meme.randomImage}/>
+        <img className="meme-img" src={meme.randomImage} alt="random"/>
         <h2 className="phrase top">{meme.topText}</h2>
         <h2 className="phrase bottom">{meme.bottomText}</h2>
       </div>
